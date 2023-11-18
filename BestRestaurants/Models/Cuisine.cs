@@ -8,6 +8,6 @@ namespace BestRestaurants.Models
   {
     public string Name { get; set; }
     public int CuisineId { get; set; }
-    
+    public List<Restaurant> Restaurants {get; set; }
   }
 }

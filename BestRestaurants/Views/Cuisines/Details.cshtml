@@ -8,13 +8,13 @@
 <h2>Cuisine Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-@* <h3>Items:</h3>
+<h3>Restaurants:</h3>
 <ul>
-  @foreach (Item item in Model.Items)
+  @foreach (Restaurant restaurant in Model.Restaurants)
   {
-    <li>@Html.ActionLink($"{item.Description}", "Details", "Items", new { id = item.ItemId })</li>
+    <li>@Html.ActionLink($"{restaurant.Name}", "Details", "Restaurants", new { id = restaurant.RestaurantId })</li>
   }
-</ul> *@
+</ul>
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Edit Cuisine", "Edit", new { id = Model.CuisineId })</p>

@@ -37,7 +37,7 @@ namespace BestRestaurants.Controllers
     public ActionResult Details(int id)
     {
       Cuisine thisCuisine = _db.Cuisines
-                                  // .Include(cuisine => cuisine.Items)
+                                  .Include(cuisine => cuisine.Restaurants)
                                   .FirstOrDefault(cuisine => cuisine.CuisineId == id);
       return View(thisCuisine);
     }
