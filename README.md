@@ -1,6 +1,4 @@
-# (Application Name)
-
-#### (Brief description of application)
+# Best Restaurants
 
 #### By Aidan Williams
 
@@ -11,6 +9,8 @@
 * _MSTest_
 
 ## Description
+
+A best restaurants tracker. Allows users to link restaurants to a cuisine and view all restaurants associated with a cuisine.
 
 ## Setup Instructions
 
