@@ -3,8 +3,8 @@
 }
 
 @model BestRestaurants.Models.Restaurant
-@* <p><strong>NOTE:</strong> You need to have at least one category before you can add an item!</p>
-<p>Go to @Html.ActionLink("this page", "Create", "Categories") to create a category.</p> *@
+<p><strong>NOTE:</strong> You need to have at least one cuisine before you can add a restaurant.</p>
+<p>Go to @Html.ActionLink("this page", "Create", "Cuisines") to create a cuisine.</p>
 <h4>Add a new restaurant</h4>
 @using (Html.BeginForm())
 {
